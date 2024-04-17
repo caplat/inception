@@ -38,5 +38,5 @@ fi
 echo "Shutting down MariaDB"
 mysqladmin -uroot -p"${ROOT_PASSWORD}" shutdown
 
-#exec "$@"
+exec "$@"
 

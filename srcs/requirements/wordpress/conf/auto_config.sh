@@ -9,7 +9,7 @@ wp config create --allow-root \
 --dbuser=$USER \
 --dbpass=$USER_PASSWORD \
 --dbhost=mariadb \
---path='/var/www/html'
+--path='/var/www/wordpress'
 
 fi
 

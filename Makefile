@@ -14,4 +14,9 @@ down:
 clean:
 	sudo rm -rf /home/acaplat/data/mariadb
 	sudo rm -rf /home/acaplat/data/wordpress
+	docker volume rm srcs_mariadb
+	docker volume rm srcs_wordpress
 	docker system prune -f
+
+logs:
+	docker-compose -f srcs/docker-compose.yml logs

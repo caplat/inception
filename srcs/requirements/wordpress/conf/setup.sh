@@ -6,7 +6,7 @@ sleep 10
 if [ ! -f /var/www/html/wp-config.php ]; then
     echo "wp-config.php not found. Creating..."
 
-wp core download --locale=fr_FR --path='/var/www/htm'
+wp core download --allow-root --locale=fr_FR --path='/var/www/html'
 
 wp config create --allow-root \
 --dbname=${DATABASE} \
